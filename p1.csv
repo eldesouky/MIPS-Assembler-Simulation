@@ -1,0 +1,13 @@
+0
+addi $t2,$0,5
+addi $t3,$0,0
+addi $ra,$ra,1020
+add $t4,$t2,$0
+loop:
+beq $t2,$t3,END
+addi $t3,$t3,1
+addi $ra,$ra,10
+addi $ra,$ra,10
+j loop
+END:
+addi $t2,$0,1
